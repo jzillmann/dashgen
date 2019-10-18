@@ -3,6 +3,7 @@ import "./main.css";
 
 const app = new App({
 	target: document.body,
+	intro: true,
 	props: {
 		version: '${VERSION}',
 		reports,

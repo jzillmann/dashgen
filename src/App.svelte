@@ -3,6 +3,8 @@
 	import NavBar from './components/NavBar.svelte'
 	import TextFiller from './components/TextFiller.svelte'
 
+	import { fade } from 'svelte/transition';
+
 	export let version;
 	export let reports;
 	export let reportsCreatedAt;
@@ -18,7 +20,7 @@
 	<NavBar {version} />
 
 	<!-- Content -->
-	<main class="pt-20 px-8 text-gray-700">
+	<main class="pt-20 px-8 text-gray-700" in:fade>
 		{#each reportNames as reportName}
 			<section class="pb-4">
 				<h2 class="pb-4">{reportName}</h2>
@@ -26,9 +28,9 @@
 				<section class="pl-2 pb-0">
 						<table class="bg-gray-100">
 								<tr>
-									<th class="px-4 pt-1 w-56 text-center text-gray-700" rowspan="3">{category.name}</th>
+									<th class="px-4 pt-1 w-56 font-light text-gray-700" rowspan="3">{category.name}</th>
 									{#each category.counts['headers'] as metric}
-									<th class="px-4 pt-1 w-40 text-left text-gray-600">{metric}</th>
+									<th class="px-4 pt-1 w-40 text-left font-medium text-gray-600">{metric}</th>
 									{/each}
 								</tr>
 								<tr>
@@ -42,7 +44,7 @@
 			</section>
 		{/each}
 
-		<TextFiller />
+		<!-- <TextFiller /> -->
 	</main>
 
 	<!-- Footer -->
