@@ -19,8 +19,33 @@
 
 	<!-- Content -->
 	<main class="pt-20 px-8 text-gray-700">
-		<div>{reportNames.length} reports available!</div>
-		<TextFiller />
+		{#each reportNames as reportName}
+			<section class="pb-4">
+				<h2 class="pb-4">{reportName}</h2>
+				{#each reports[reportName] as category}
+				<section class="pl-2 pb-4">
+					<h3>{category.name}</h3>
+					<table class="bg-blue-100">
+						<thead>
+							<tr>
+								{#each category.counts['headers'] as metric}
+									<th class="px-4 text-gray-600 w-40">{metric}</th>
+								{/each}
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								{#each category.counts['values'] as count}
+									<th class="px-4 text-gray-500">{count}</th>
+								{/each}
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				{/each}
+			</section>
+		{/each}
+		<!-- <TextFiller /> -->
 	</main>
 
 	<!-- Footer -->

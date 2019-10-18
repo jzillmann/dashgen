@@ -56,9 +56,9 @@ function generateDataJsContent(dataFolder) {
             const reportName = path.parse(file).name;
             const jsonContent = fs.readFileSync(filePath);
             const json = JSON.parse(jsonContent);
-            dataJsLines.push(`    ${reportName} : [`);
+            dataJsLines.push(`    ${reportName}:`);
             dataJsLines.push(`        ${JSON.stringify(json)}`);
-            dataJsLines.push('    ],')
+            dataJsLines.push('    ,')
 
         } else {
             console.log(`\tIgnoring '${filePath}'`);

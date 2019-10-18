@@ -1,6 +1,6 @@
 # Dashgen
 
-Generates *static* Dashboards from JSON files. The JSON files have to be in a well defined but generic format.
+Simplistic *static* dashboard generator. Put your metrics in a generic JSON format, *Dashgen* will visualize them!
 
 
 ## How to build
