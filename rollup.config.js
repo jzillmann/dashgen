@@ -1,4 +1,5 @@
 import svelte from 'rollup-plugin-svelte';
+import replace from 'rollup-plugin-replace';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
@@ -18,6 +19,13 @@ export default {
 	plugins: [
 
 		postcss({ extract: "public/tailwind.css" }),
+
+		replace({
+			include: 'src/main.js',
+			exclude: 'node_modules/**',
+			delimiters: ['${', '}'],
+			VERSION: process.env.npm_package_version
+		}),
 
 		svelte({
 			// enable run-time checks when not in production
