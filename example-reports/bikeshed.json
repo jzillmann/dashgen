@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Entity Counts",
+    "counts": {
+      "headers": ["Users", "Projects", "Archived Projects", "Links"],
+      "values": [23, 40, 0, 108]
+    },
+    "details": {}
+  },
+   {
+    "name": "Project Compilations",
+    "counts": {
+      "headers": ["Projects", "Success", "Failures", "Missing", "Time"],
+      "values": [40, 39, 1, 0, "2.068 s"]
+    },
+    "details": {
+      "headers": ["Project", "Referenced Projects", "Missing Projects", "Failures"],
+      "rows": [
+        ["p3", "[]", "[]", "Could not find artifact 'weather 2.xls' not found, only: [reports.pdf]"]
+      ]
+    }
+  }
+]

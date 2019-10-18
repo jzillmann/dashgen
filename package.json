@@ -24,6 +24,8 @@
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public --single",
-    "start:dev": "sirv public --single --dev"
+    "start:dev": "sirv public --single --dev",
+    "pack": "npm run build && npm pack ./public",
+    "pack:dry": "npm run build && npm pack --dry-run ./public"
   }
 }

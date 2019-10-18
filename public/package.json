@@ -1,0 +1,16 @@
+{
+  "name": "dashgen-cli",
+  "version": "0.1.0",
+  "description": "CLI tool to generate a dashgen website bundled with the JSON source data",
+  "main": "index.js",
+  "bin": {
+    "dashgen": "./bin/cli.js"
+  },
+  "keywords": [
+    "dashboard",
+    "generator",
+    "static"
+  ],
+  "author": "",
+  "license": "ISC"
+}
