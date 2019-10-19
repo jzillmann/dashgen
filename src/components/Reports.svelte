@@ -1,5 +1,6 @@
 <script>
 
+    import { send, receive } from '../crossfade.js';
     import { fade } from 'svelte/transition';
 
     import { reports } from '../stores.js';
@@ -15,6 +16,14 @@
         return groups;
     }, {});
 
+    function headerKey(reportName) {
+        return `${reportName.replace(/\s/g, "_")}`;
+    }
+
+    function rowKey(report) {
+        return `${report.sourceName}_${report.name.replace(/\s/g, "_")}`;
+    }
+
 </script>
 
 <div class="absolute" transition:fade>
@@ -27,12 +36,12 @@
                         <div class="p-2 rounded min-h-0 bg-gray-100 font-light text-gray-700 bg-gray-100">{report.name}</div>
                     </div>
                     <table class="bg-gray-100">
-                            <tr>
+                            <tr class="bg-gray-100" in:receive="{{key:headerKey(report.name)}}" out:send="{{key:headerKey(report.name)}}">
                                 {#each Object.entries(report.metrics) as metric}
                                     <th class="px-4 pt-1 w-40 text-left font-normal text-gray-600">{metric[0]}</th>
                                 {/each}
                             </tr>
-                            <tr>
+                            <tr class="bg-gray-100" in:receive="{{key:rowKey(report)}}" out:send="{{key:rowKey(report)}}">
                                 {#each Object.entries(report.metrics) as metric}
                                     <td class="px-4 pb-1 w-40 text-gray-500">{metric[1]}</td>
                                 {/each}
