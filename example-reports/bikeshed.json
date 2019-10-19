@@ -1,17 +1,24 @@
 [
   {
     "name": "Entity Counts",
-    "counts": {
-      "headers": ["Users", "Projects", "Archived Projects", "Links"],
-      "values": [23, 40, 0, 108]
-    },
+    "sourceName": "bikeshed",
+    "metrics": {
+      "Users": 23, 
+      "Projects": 40,
+      "Archived Projects": 0,
+       "Links": 108
+     },
     "details": {}
   },
    {
     "name": "Project Compilations",
-    "counts": {
-      "headers": ["Projects", "Success", "Failures", "Missing", "Time"],
-      "values": [40, 39, 1, 0, "2.068 s"]
+    "sourceName": "bikeshed",
+    "metrics": {
+      "Projects": 40, 
+      "Success": 39, 
+      "Failures": 1, 
+      "Missing": 0, 
+      "Time": "2.068 s"
     },
     "details": {
       "headers": ["Project", "Referenced Projects", "Missing Projects", "Failures"],

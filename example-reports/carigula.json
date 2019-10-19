@@ -1,17 +1,26 @@
 [
   {
     "name": "Entity Counts",
-    "counts": {
-      "headers": ["Users", "Projects", "Archived Projects", "Links"],
-      "values": [103, 55, 1, 23]
+    "sourceName": "carigula",
+  	"sourceDate": "2019-10-19T12:27:48.566Z",
+    "metrics": {
+      "Users": 103, 
+      "Projects": 55,
+      "Archived Projects": 1,
+       "Links": 23
     },
     "details": {}
   },
    {
     "name": "Project Compilations",
-    "counts": {
-      "headers": ["Projects", "Success", "Failures", "Missing", "Time"],
-      "values": [55, 50, 5, 1, "3.068 s"]
+    "sourceName": "carigula",
+  	"sourceDate": "2019-10-19T12:27:48.566Z",
+    "metrics": {
+      "Projects": 55, 
+      "Success": 50, 
+      "Failures": 5, 
+      "Missing": 1, 
+      "Time": "3.068 s"
     },
     "details": {
       "headers": ["Project", "Referenced Projects", "Missing Projects", "Failures"],
