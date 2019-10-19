@@ -19,7 +19,7 @@
 	<NavBar {version} />
 
 	<!-- Content -->
-	<main class="pt-20 px-8 text-gray-700" in:fade>
+	<main class="pt-24 px-8 text-gray-700" in:fade>
 		{#if $reportsAlignedByCategory}
 			<ReportsAlignedByCategory/>
 		{:else}
