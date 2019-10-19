@@ -10,7 +10,7 @@
 
 </script>
 
-<header class="fixed w-full flex items-center bg-gray-100">
+<header class="fixed w-full flex items-center bg-gray-100 z-10">
     <div class="pl-8 text-5xl font-bold tracking-tighter text-gray-700">Dashgen</div>
     <div class="pl-2 mt-8 text-sm text-gray-600">v{version}</div>
     <nav class="flex pl-4 w-full text-lg font-medium text-gray-700">

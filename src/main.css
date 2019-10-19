@@ -2,6 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+body {
+	@apply bg-gray-200;
+}
+
 h1 {
   @apply text-5xl;
   @apply font-bold;
