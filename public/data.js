@@ -67,5 +67,17 @@ const data = [
                 ["p3", "[]", "[]", "Could not find artifact 'weather 2.xls' not found, only: [reports.pdf]"]
             ]
         }
+    },
+    {
+        "name": "Entity Counts",
+        "sourceName": "demo3",
+        "sourceDate": "2019-10-17T12:49:48.566Z",
+        "metrics": {
+            "Users": 1,
+            "Projects": 2,
+            "Archived Projects": 0,
+            "Links": 1
+        },
+        "details": {}
     }
 ]
