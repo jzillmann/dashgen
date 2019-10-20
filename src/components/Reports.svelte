@@ -43,7 +43,7 @@
             {#each groupedBySource[sourceName] as report}
                 <section class="pl-2 pb-8 relative">
                     <div class="flex">
-                        <div class="flex items-baseline p-2 rounded min-h-0 font-light text-gray-700 bg-gray-100">
+                        <div class="flex items-baseline p-2 min-h-0 rounded-t font-light text-gray-700 bg-gray-300">
                             {report.name}
                             {#if report['messages'] && report['messages'].length>0}
                                 <div class="pl-2 mb-2" on:mouseenter={()=>showMessages(report)} on:mouseleave={hideMessages}>
@@ -67,14 +67,14 @@
                             </tr>
                         </table>
                         {#if showMessagesFor === `${report.sourceName}.${report.name}`}
-                            <div class="absolute z-10 mt-2 bg-gray-300 shadow-xl">
-                                <div class="flex items-baseline">
-                                    <h3 class="p-2">Messages</h3>
+                            <div class="absolute z-10 mt-2 bg-gray-300 shadow-2xl">
+                                <div class="flex items-baseline font-light">
+                                    <div class="p-2 text-gray-700">Messages</div>
                                     <div>({report.messages.length})</div>
                                 </div>
-                                <ul>
+                                <ul class="mb-1">
                                     {#each report.messages as message ,i }
-                                        <li class="p-2 border leading-tight bg-gray-200">{message}</li>
+                                        <li class="p-2 border leading-tight bg-gray-200 font-mono text-sm">{message}</li>
                                     {/each}
                                 </ul>
                             </div>
