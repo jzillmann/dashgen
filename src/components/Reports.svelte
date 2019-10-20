@@ -74,7 +74,7 @@
                                 </div>
                                 <ul class="mb-1">
                                     {#each report.messages as message ,i }
-                                        <li class="p-2 border leading-tight bg-gray-200 font-mono text-sm">{message}</li>
+                                        <li class="p-2 border bg-gray-200 font-mono text-sm">{message}</li>
                                     {/each}
                                 </ul>
                             </div>

@@ -29,10 +29,10 @@ const data = [
         "messages": [
             "Project 'p18' requires projects [p10, p3, p14, p13] but missing [p3]",
             "Compiling project 'p19' requires projects [p3] but missing [p3] failed: something.projects.ArtifactV1 cannot be cast to something.projects.Artifact",
-            "Compiling project 'p33' failed: Could not find artifact 'user 2.xls' not found, only: [reports.pdf, user.xls]",
-            "Compiling project 'p37' failed: Could not find artifact 'user 2.xls' not found, only: [reports.pdf, user.xls]",
-            "Compiling project 'p40' failed: Could not find artifact 'user 2.xls' not found, only: [reports.pdf, user.xls]",
-            "Compiling project 'p41' failed: Could not find user 'u23' not found, only: [u2, u3]"
+            "Compiling project 'p33' failed: Could not find artifact 'user 2.xls', only: [reports.pdf, user.xls]",
+            "Compiling project 'p37' failed: Could not find artifact 'user 2.xls', only: [reports.pdf, user.xls]",
+            "Compiling project 'p40' failed: Could not find artifact 'user 2.xls', only: [reports.pdf, user.xls]",
+            "Compiling project 'p41' failed: Could not find user 'u23', only: [u2, u3]"
         ]
     },
     {
@@ -59,7 +59,7 @@ const data = [
             "Time": "2.068 s"
         },
         "messages": [
-            "Compiling project 'p3' failed: Could not find artifact 'weather 2.xls' not found, only: [reports.pdf]"
+            "Compiling project 'p3' failed: Could not find artifact 'weather 2.xls', only: [reports.pdf]"
         ]
     },
     {

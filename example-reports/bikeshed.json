@@ -21,7 +21,7 @@
       "Time": "2.068 s"
     },
     "messages": [
-      "Compiling project 'p3' failed: Could not find artifact 'weather 2.xls' not found, only: [reports.pdf]"
+      "Compiling project 'p3' failed: Could not find artifact 'weather 2.xls', only: [reports.pdf]"
     ]
   }
 ]
