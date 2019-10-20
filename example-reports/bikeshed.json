@@ -8,7 +8,7 @@
       "Archived Projects": 0,
        "Links": 108
      },
-    "details": {}
+    "messages": {}
   },
    {
     "name": "Project Compilations",
@@ -20,11 +20,8 @@
       "Missing": 0, 
       "Time": "2.068 s"
     },
-    "details": {
-      "headers": ["Project", "Referenced Projects", "Missing Projects", "Failures"],
-      "rows": [
-        ["p3", "[]", "[]", "Could not find artifact 'weather 2.xls' not found, only: [reports.pdf]"]
-      ]
-    }
+    "messages": [
+      "Compiling project 'p3' failed: Could not find artifact 'weather 2.xls' not found, only: [reports.pdf]"
+    ]
   }
 ]

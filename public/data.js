@@ -13,7 +13,7 @@ const data = [
             "Archived Projects": 1,
             "Links": 23
         },
-        "details": {}
+        "messages": []
     },
     {
         "name": "Project Compilations",
@@ -26,17 +26,14 @@ const data = [
             "Missing": 1,
             "Time": "3.068 s"
         },
-        "details": {
-            "headers": ["Project", "Referenced Projects", "Missing Projects", "Failures"],
-            "rows": [
-                ["p18", "[p10, p3, p14, p13]", "[p3]", ""],
-                ["p19", "[p3]", "[p3]", "something.projects.ArtifactV1 cannot be cast to something.projects.Artifact"],
-                ["p33", "[]", "[]", "Could not find artifact 'user 2.xls' not found, only: [reports.pdf, user.xls]"],
-                ["p37", "[]", "[]", "Could not find artifact 'user 2.xls' not found, only: [reports.pdf, user.xls]"],
-                ["p40", "[]", "[]", "Could not find artifact 'user 2.xls' not found, only: [reports.pdf, user.xls]"],
-                ["p41", "[]", "[]", "Could not find user 'u23' not found, only: [u2, u3]"]
-            ]
-        }
+        "messages": [
+            "Project 'p18' requires projects [p10, p3, p14, p13] but missing [p3]",
+            "Compiling project 'p19' requires projects [p3] but missing [p3] failed: something.projects.ArtifactV1 cannot be cast to something.projects.Artifact",
+            "Compiling project 'p33' failed: Could not find artifact 'user 2.xls' not found, only: [reports.pdf, user.xls]",
+            "Compiling project 'p37' failed: Could not find artifact 'user 2.xls' not found, only: [reports.pdf, user.xls]",
+            "Compiling project 'p40' failed: Could not find artifact 'user 2.xls' not found, only: [reports.pdf, user.xls]",
+            "Compiling project 'p41' failed: Could not find user 'u23' not found, only: [u2, u3]"
+        ]
     },
     {
         "name": "Entity Counts",
@@ -48,7 +45,7 @@ const data = [
             "Archived Projects": 0,
             "Links": 108
         },
-        "details": {}
+        "messages": []
     },
     {
         "name": "Project Compilations",
@@ -61,12 +58,9 @@ const data = [
             "Missing": 0,
             "Time": "2.068 s"
         },
-        "details": {
-            "headers": ["Project", "Referenced Projects", "Missing Projects", "Failures"],
-            "rows": [
-                ["p3", "[]", "[]", "Could not find artifact 'weather 2.xls' not found, only: [reports.pdf]"]
-            ]
-        }
+        "messages": [
+            "Compiling project 'p3' failed: Could not find artifact 'weather 2.xls' not found, only: [reports.pdf]"
+        ]
     },
     {
         "name": "Entity Counts",
@@ -78,6 +72,6 @@ const data = [
             "Archived Projects": 0,
             "Links": 1
         },
-        "details": {}
+        "messages": []
     }
 ]

@@ -14,7 +14,7 @@
 
 </script>
 
-<div>
+<div class="antialiased">
 	<!-- Header -->
 	<NavBar {version} />
 
