@@ -1,13 +1,13 @@
 <script>
 
 	import NavBar from './components/NavBar.svelte'
-	import TextFiller from './components/TextFiller.svelte'
-	import Reports from './components/Reports.svelte'
+	import Totals from './components/Totals.svelte'
+	import ReportsAlignedBySource from './components/ReportsAlignedBySource.svelte'
 	import ReportsAlignedByCategory from './components/ReportsAlignedByCategory.svelte'
 
 	import { fade } from 'svelte/transition';
 
-	import { reportsAlignedByCategory } from './stores.js';
+	import { page, reportsAlignedByCategory } from './stores.js';
 
 	export let version;
 	export let reportsCreatedAt;
@@ -20,13 +20,17 @@
 
 	<!-- Content -->
 	<main class="pt-24 px-8 text-gray-700" in:fade>
-		{#if $reportsAlignedByCategory}
-			<ReportsAlignedByCategory/>
+		{#if $page === 'reports'}
+			{#if $reportsAlignedByCategory}
+				<ReportsAlignedByCategory/>
+			{:else}
+				<ReportsAlignedBySource/>
+			{/if}
+		{:else if $page === 'totals'}
+			<Totals/>
 		{:else}
-			<Reports/>
+			<div class="text-center font-bold text-lg">404 - Page '{$page}' not found</div>
 		{/if}
-		<!-- <TextFiller /> -->
-
 	</main>
 
 	<!-- Footer -->
