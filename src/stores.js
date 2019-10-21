@@ -2,6 +2,6 @@ import { writable } from 'svelte/store';
 
 export const reports = writable([]);
 
-export const reportsAlignedByCategory = writable(false);
+export const reportsGroupedBySource = writable(true);
 
 export const page = writable('reports');

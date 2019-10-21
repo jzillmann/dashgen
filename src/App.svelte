@@ -2,12 +2,12 @@
 
 	import NavBar from './components/NavBar.svelte'
 	import Totals from './components/Totals.svelte'
-	import ReportsAlignedBySource from './components/ReportsAlignedBySource.svelte'
-	import ReportsAlignedByCategory from './components/ReportsAlignedByCategory.svelte'
+	import ReportsBySource from './components/ReportsBySource.svelte'
+	import ReportsByCategory from './components/ReportsByCategory.svelte'
 
 	import { fade } from 'svelte/transition';
 
-	import { page, reportsAlignedByCategory } from './stores.js';
+	import { page, reportsGroupedBySource } from './stores.js';
 
 	export let version;
 	export let reportsCreatedAt;
@@ -21,10 +21,10 @@
 	<!-- Content -->
 	<main class="pt-24 px-8 text-gray-700" in:fade>
 		{#if $page === 'reports'}
-			{#if $reportsAlignedByCategory}
-				<ReportsAlignedByCategory/>
+			{#if $reportsGroupedBySource}
+				<ReportsBySource/>
 			{:else}
-				<ReportsAlignedBySource/>
+				<ReportsByCategory/>
 			{/if}
 		{:else if $page === 'totals'}
 			<Totals/>
