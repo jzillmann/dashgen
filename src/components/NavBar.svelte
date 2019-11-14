@@ -1,6 +1,6 @@
 <script>
 
-    import { fade, slide, draw, blur, scale } from 'svelte/transition';
+    import { scale } from 'svelte/transition';
 
     import { page, reportsGroupedBySource } from '../stores.js';
 
