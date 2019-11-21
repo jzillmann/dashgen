@@ -15,7 +15,6 @@ Simplistic _static_ dashboard generator. Store your metrics in a generic JSON fo
 ## How to publish
 
 - Test the package with `npm run pack:dry` and `npm run pack`
-- Test `cli.js` with `cd public && npm link`. Now you can execute `dashgen`. Unlink with `npm unlink`.
+- Test `cli.js` with `npm link`. Now you can execute `dashgen`. Unlink with `npm unlink`.
 - Release the package:
-  - Install [np](https://github.com/sindresorhus/np) if you havn't `npm install --global np`
-  - `np`
+  - `npm run release`
