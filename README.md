@@ -18,3 +18,5 @@ Simplistic _static_ dashboard generator. Store your metrics in a generic JSON fo
 - Test `cli.js` with `npm link`. Now you can execute `dashgen`. Unlink with `npm unlink`.
 - Release the package:
   - `npm run release`
+  - `git push`
+  - `git push --tags`

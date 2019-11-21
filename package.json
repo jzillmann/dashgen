@@ -46,6 +46,6 @@
     "start:dev": "sirv public --single --dev",
     "pack": "npm run build && npm pack",
     "pack:dry": "npm run build && npm pack --dry-run",
-    "release": "np"
+    "release": "npm run build && np"
   }
 }
