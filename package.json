@@ -13,7 +13,7 @@
     "html",
     "report"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "files": [
     "bin/**",
     "public/**"

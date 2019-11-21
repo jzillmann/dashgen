@@ -1,3 +1,17 @@
+<p>
+  <a href="https://www.npmjs.com/package/dashgen">
+    <img src="https://img.shields.io/npm/v/dashgen.svg" alt="npm version">
+  </a>
+
+  <a href="https://packagephobia.now.sh/result?p=dashgen">
+    <img src="https://packagephobia.now.sh/badge?p=dashgen" alt="install size">
+  </a>
+
+  <a href="https://github.com/jzillmann/dashgen/blob/master/LICENSE">
+    <img src="https://img.shields.io/npm/l/dashgen.svg" alt="license">
+  </a>
+</p>
+
 # Dashgen
 
 Simplistic _static_ dashboard generator. Store your metrics in a generic JSON format, _Dashgen_ will generate an HTML report out of them them!
