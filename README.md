@@ -19,6 +19,6 @@ Simplistic _static_ dashboard generator. Store your metrics in a generic JSON fo
 - Release the package:
   - `npm version [patch|minor|major]`
   - `npm run build`
-  - `npm run publish`
+  - `npm publish`
   - `git push`
   - `git push --tags`
