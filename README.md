@@ -4,7 +4,7 @@ Simplistic _static_ dashboard generator. Store your metrics in a generic JSON fo
 
 ## How to use
 
-- `npm install --global dashgen-cli`
+- `npm install --global dashgen`
 - `dashgen <dataFolder> <targetFolder>`
 - Open `<targetFolder>/index.html`
 
