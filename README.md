@@ -16,9 +16,11 @@
 
 Simplistic _static_ dashboard generator. Store your metrics in a generic JSON format, _Dashgen_ will generate an HTML report out of them them!
 
-## JSON report structure
+## Usage
 
-You can have one or multiple files in this format:
+### JSON report structure
+
+Have one or multiple files in this JSON format:
 
 ```
 {
@@ -42,11 +44,13 @@ You can have one or multiple files in this format:
 }
 ```
 
-## How to generate a HTML report out of the JSON files
+### Generate a dashgen report
 
 - `npm install --global dashgen`
 - `dashgen <dataFolder> <targetFolder>`
 - Open `<targetFolder>/index.html`
+
+---
 
 ## Development
 
