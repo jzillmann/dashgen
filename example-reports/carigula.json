@@ -1,34 +1,34 @@
-[
-  {
-    "name": "Entity Counts",
-    "sourceName": "carigula",
-  	"sourceDate": "2019-10-19T12:27:48.566Z",
-    "metrics": {
-      "Users": 103, 
-      "Projects": 55,
-      "Archived Projects": 1,
-       "Links": 23
+{
+  "sourceName": "carigula",
+  "sourceDate": "2019-10-19T12:27:48.566Z",
+  "reports": [
+    {
+      "name": "Entity Counts",
+      "metrics": {
+        "Users": 103,
+        "Projects": 55,
+        "Archived Projects": 1,
+        "Links": 23
+      },
+      "messages": []
     },
-    "messages": []
-  },
-   {
-    "name": "Project Compilations",
-    "sourceName": "carigula",
-  	"sourceDate": "2019-10-19T12:27:48.566Z",
-    "metrics": {
-      "Projects": 55, 
-      "Success": 50, 
-      "Failures": 5, 
-      "Missing": 1, 
-      "Time": "3.068 s"
-    },
-    "messages": [
-      "Compiling project 'p18' requires projects [p10, p3, p14, p13] but missing [p3]",
-      "Compiling project 'p19' requires projects [p3] but missing [p3] failed: something.projects.ArtifactV1 cannot be cast to something.projects.Artifact",
-      "Compiling project 'p33' failed: Could not find artifact 'user 2.xls', only: [reports.pdf, user.xls]",
-      "Compiling project 'p37' failed: Could not find artifact 'user 2.xls', only: [reports.pdf, user.xls]",
-      "Compiling project 'p40' failed: Could not find artifact 'user 2.xls', only: [reports.pdf, user.xls]",
-      "Compiling project 'p41' failed: Could not find user 'u23', only: [u2, u3]"
-    ]
-  }
-]
+    {
+      "name": "Project Compilations",
+      "metrics": {
+        "Projects": 55,
+        "Success": 50,
+        "Failures": 5,
+        "Missing": 1,
+        "Time": "3.068 s"
+      },
+      "messages": [
+        "Compiling project 'p18' requires projects [p10, p3, p14, p13] but missing [p3]",
+        "Compiling project 'p19' requires projects [p3] but missing [p3] failed: something.projects.ArtifactV1 cannot be cast to something.projects.Artifact",
+        "Compiling project 'p33' failed: Could not find artifact 'user 2.xls', only: [reports.pdf, user.xls]",
+        "Compiling project 'p37' failed: Could not find artifact 'user 2.xls', only: [reports.pdf, user.xls]",
+        "Compiling project 'p40' failed: Could not find artifact 'user 2.xls', only: [reports.pdf, user.xls]",
+        "Compiling project 'p41' failed: Could not find user 'u23', only: [u2, u3]"
+      ]
+    }
+  ]
+}

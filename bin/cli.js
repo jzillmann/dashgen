@@ -58,11 +58,13 @@ function generateDataJsContent(dataFolder) {
     const filePath = path.join(dataFolder, file);
     if (file.endsWith(".json")) {
       console.log(`\tIncluding '${filePath}'`);
-      const reportName = path.parse(file).name;
       const jsonContent = fs.readFileSync(filePath);
       const json = JSON.parse(jsonContent);
-      json.forEach(elem => {
-        dataJsLines.push(`    ${JSON.stringify(elem)},`);
+
+      const sourceName = json.sourceName;
+      json.reports.forEach(report => {
+        report.sourceName = sourceName;
+        dataJsLines.push(`    ${JSON.stringify(report)},`);
       });
     } else {
       console.log(`\tIgnoring '${filePath}'`);

@@ -1,27 +1,29 @@
-[
-  {
-    "name": "Entity Counts",
-    "sourceName": "bikeshed",
-    "metrics": {
-      "Users": 23, 
-      "Projects": 40,
-      "Archived Projects": 0,
-       "Links": 108
-     },
-    "messages": {}
-  },
-   {
-    "name": "Project Compilations",
-    "sourceName": "bikeshed",
-    "metrics": {
-      "Projects": 40, 
-      "Success": 39, 
-      "Failures": 1, 
-      "Missing": 0, 
-      "Time": "2.068 s"
+{
+  "sourceName": "bikeshed",
+  "sourceDate": "2019-10-19T12:27:48.566Z",
+  "reports": [
+    {
+      "name": "Entity Counts",
+      "metrics": {
+        "Users": 23,
+        "Projects": 40,
+        "Archived Projects": 0,
+        "Links": 108
+      },
+      "messages": {}
     },
-    "messages": [
-      "Compiling project 'p3' failed: Could not find artifact 'weather 2.xls', only: [reports.pdf]"
-    ]
-  }
-]
+    {
+      "name": "Project Compilations",
+      "metrics": {
+        "Projects": 40,
+        "Success": 39,
+        "Failures": 1,
+        "Missing": 0,
+        "Time": "2.068 s"
+      },
+      "messages": [
+        "Compiling project 'p3' failed: Could not find artifact 'weather 2.xls', only: [reports.pdf]"
+      ]
+    }
+  ]
+}

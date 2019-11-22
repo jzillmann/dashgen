@@ -16,7 +16,33 @@
 
 Simplistic _static_ dashboard generator. Store your metrics in a generic JSON format, _Dashgen_ will generate an HTML report out of them them!
 
-## How to use
+# JSON report structure
+
+You can have one or multiple files in this format:
+
+```
+{
+    "sourceName": "my source"
+    "reports": [
+        {
+            "name": "my report 1",
+            "metrics": {
+                "key1": "value1",
+                "key2": "value2",
+                ...
+            },
+            "messages" :[
+                "Something seemed slightly off with ..."
+            ]
+        },
+        {
+            "name": "my report 1",
+            ...
+    ]
+}
+```
+
+## How to generate a HTML report out of the JSON files
 
 - `npm install --global dashgen`
 - `dashgen <dataFolder> <targetFolder>`
