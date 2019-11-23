@@ -66,7 +66,4 @@ Have one or multiple files in this JSON format:
 - Test `cli.js` with `npm link`. Now you can execute `dashgen`. Unlink with `npm unlink`.
 - Release the package:
   - `npm version [patch|minor|major]`
-  - `npm run build`
-  - `npm publish`
-  - `git push`
-  - `git push --tags`
+  - `npm release`

@@ -45,6 +45,7 @@
     "start:dev": "sirv public --single --dev",
     "demo": "npm run build && cp -r public/* docs/",
     "pack": "npm run build && npm pack",
-    "pack:dry": "npm run build && npm pack --dry-run"
+    "pack:dry": "npm run build && npm pack --dry-run",
+    "release": "npm run build && npm publish && git push --tags"
   }
 }
