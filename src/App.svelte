@@ -1,6 +1,7 @@
 <script>
 
 	import NavBar from './components/NavBar.svelte'
+	import SideControls from './components/SideControls.svelte'
 	import Totals from './components/Totals.svelte'
 	import ReportsBySource from './components/ReportsBySource.svelte'
 	import ReportsByCategory from './components/ReportsByCategory.svelte'
@@ -18,8 +19,10 @@
 	<!-- Header -->
 	<NavBar {version} />
 
+	<SideControls/>
+
 	<!-- Content -->
-	<main class="pt-24 px-8 text-gray-700" in:fade>
+	<main class="pt-24 mx-12 px-2 text-gray-700" in:fade>
 		{#if $page === 'reports'}
 			{#if $reportsGroupedBySource}
 				<ReportsBySource/>
