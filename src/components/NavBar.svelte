@@ -19,7 +19,7 @@
                 page.set('reports')}>Reports</li>
         </ul>
     </nav>
-    <div class="pl-8 mr-40 flex items-center float-right">
+    <div class="mr-16 flex items-center float-right">
         <a href="https://github.com/jzillmann/dashgen" target="blank">
             <svg class="h-6 w-6 fill-current text-gray-700 hover:text-gray-600 cursor-pointer" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path
