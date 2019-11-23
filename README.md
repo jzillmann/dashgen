@@ -16,6 +16,8 @@
 
 Simplistic _static_ dashboard generator. Store your metrics in a generic JSON format, _Dashgen_ will generate an HTML report out of them them!
 
+[Demo](https://jzillmann.github.io/dashgen/)
+
 ## Usage
 
 ### JSON report structure
