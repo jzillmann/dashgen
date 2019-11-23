@@ -43,6 +43,7 @@
     "dev": "run-p start:dev autobuild",
     "start": "sirv public --single",
     "start:dev": "sirv public --single --dev",
+    "demo": "npm run build && cp -r public/* docs/",
     "pack": "npm run build && npm pack",
     "pack:dry": "npm run build && npm pack --dry-run"
   }
