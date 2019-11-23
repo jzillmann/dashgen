@@ -1,7 +1,7 @@
-import { writable } from 'svelte/store';
+import { writable } from "svelte/store";
 
 export const reports = writable([]);
 
 export const reportsGroupedBySource = writable(true);
 
-export const page = writable('reports');
+export const page = writable("totals");
