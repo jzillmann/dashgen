@@ -16,7 +16,7 @@
 
 {#if sideControls.length >0}
 <div
-  class="fixed z-40 mt-24 pl-1 pr-2 pt-2 flex flex-col bg-gray-300 shadow-md"
+  class="fixed z-40 mt-24 pl-1 pr-2 pt-2 flex flex-col bg-gray-100 shadow-md"
   transition:scale
 >
   {#each sideControls as sideControl, index}
