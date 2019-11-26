@@ -558,8 +558,20 @@ object {
   background-color: #e2e8f0;
 }
 
+.group:hover .group-hover\:bg-gray-300 {
+  background-color: #e2e8f0;
+}
+
+.group:hover .group-hover\:bg-gray-400 {
+  background-color: #cbd5e0;
+}
+
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-t {
@@ -567,8 +579,17 @@ object {
   border-top-right-radius: 0.25rem;
 }
 
+.rounded-b {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
 .border {
   border-width: 1px;
+}
+
+.cursor-default {
+  cursor: default;
 }
 
 .cursor-pointer {
@@ -637,12 +658,12 @@ object {
   font-weight: 500;
 }
 
-.font-bold {
-  font-weight: 700;
+.font-semibold {
+  font-weight: 600;
 }
 
-.font-extrabold {
-  font-weight: 800;
+.font-bold {
+  font-weight: 700;
 }
 
 .h-3 {
@@ -655,6 +676,14 @@ object {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .mx-3 {
@@ -823,6 +852,10 @@ object {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
+.hover\:shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -857,6 +890,10 @@ object {
 
 .hover\:text-yellow-800:hover {
   color: #975a16;
+}
+
+.group:hover .group-hover\:text-gray-900 {
+  color: #1a202c;
 }
 
 .text-sm {
@@ -929,4 +966,12 @@ h2 {
 h3 {
   font-size: 1.125rem;
   color: #4a5568;
+}
+
+.hover\:scale-1:hover {
+  transform: scale(1.1);
+}
+
+.group:hover .group-hover\:up-7 {
+  transform: translateY(-7px);
 }
